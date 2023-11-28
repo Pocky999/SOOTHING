@@ -1,0 +1,647 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+/* 置中 */
+#nav-top,
+#nav-bottom,
+#fastlink,
+#exhibit,
+#contact-us {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* 控制置中寬度 */
+.nav-top-01,
+.nav-bottom-01,
+.fastlink-01,
+.theme,
+.project {
+    width: 1200px;
+}
+
+/* 清除預設樣式 */
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* 主要區塊 */
+.container-fluid,
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+/* banner */
+#banner {
+    background-image: url(/images/banner-01.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    height: 500px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.banner01 p {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.banner01 h2 {
+    margin-top: 30px;
+    font-size: 56px;
+    letter-spacing: 3px;
+}
+
+.banner01 h1 {
+    margin-top: 30px;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+.banner01 a {
+    color: #FFBD59;
+}
+
+.banner01 a:hover {
+    border-bottom: 1px solid #FFBD59;
+}
+
+.banner01 button {
+    margin-top: 30px;
+    padding: 8px 18px;
+    background-color: #221F37;
+    border: 1px solid #e0e0e0;
+    color: #e0e0e0;
+    border-radius: 2px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: all .3s;
+}
+
+.banner01 button:hover {
+    border: 1px solid #FFBD59;
+    color: #FFBD59;
+    border-radius: 2px;
+    transition: all .3s;
+}
+
+/* 快速連結 */
+#fastlink {
+    height: 160px;
+    background-color: #221F37;
+}
+
+.fastlink-01 {
+    text-align: center;
+    align-items: center;
+}
+
+.fastlink-02,
+.fastlink-02 a,
+.fastlink-03 {
+    height: 100px;
+    color: #e0e0e0;
+    font-family: 'Marcellus SC', serif;
+    letter-spacing: 1px;
+}
+
+.fastlink-02 {
+    border-right: 1px solid #e0e0e0;
+}
+
+.fastlink-02:nth-child(3) {
+    border-style: none;
+}
+
+.fastlink-svg {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.fastlink-03 {
+    transition: all .3s;
+}
+
+.fastlink-03:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+    color: #FFBD59;
+}
+
+/* 展示區塊 */
+#exhibit {
+    height: auto;
+    background-color: #222222;
+    color: #FFBD59;
+}
+
+/* 主題  */
+.theme {
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.theme small {
+    font-family: 'Marcellus SC', serif;
+    letter-spacing: 1px;
+}
+
+.theme-decorate {
+    height: 60px;
+    border-left: 2px solid #FFBD59;
+    margin: 16px 0;
+}
+
+.theme h4 {
+    font-size: 38px;
+    letter-spacing: 1px;
+}
+
+.theme sub {
+    font-size: 36px;
+    margin-left: -5px;
+}
+
+.theme p {
+    font-size: 16px;
+    color: #e0e0e0;
+    letter-spacing: 1px;
+    line-height: 26px;
+}
+
+.carousel-inner {
+    border-radius: 5px;
+}
+
+.theme-01,
+.theme-02,
+.theme-03 {
+    margin-left: 20px;
+}
+
+.theme-02,
+.theme-03 {
+    margin-top: 120px;
+}
+
+.theme-01-01,
+.theme-02-02,
+.theme-03-01 {
+    margin-top: 40px;
+}
+
+.theme-02-02 {
+    margin-left: 20px;
+}
+
+/* 商品區 */
+.project {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.project-decorate {
+    display: inline-block;
+    width: 60px;
+    border-top: 2px solid #FFBD59;
+    margin-bottom: 5px;
+}
+
+.project h4 {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.project-02 {
+    margin-bottom: 100px;
+}
+
+.project-02 .row>* {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.project-02-01 {
+    margin: 0 20px;
+    border-style: none;
+    background-color: #333;
+    transition: all .3s;
+}
+
+.project-02-01:hover {
+    transform: scale(1.05);
+    transition: all .3s;
+}
+
+.project-02-01 a {
+    font-size: 24px;
+    color: #e0e0e0;
+}
+
+.project-02-01 a:hover {
+    color: #FFBD59;
+}
+
+/* 聯絡我們 */
+#contact-us {
+    background-image: url(/images/contactus.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    height: 260px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: #e9e9e9;
+}
+
+#contact-us p {
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+#contact-us button {
+    width: 180px;
+    height: 48px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    background-color: #222222;
+    border: 1px solid #e0e0e0;
+    color: #e0e0e0;
+    transition: all .3s;
+}
+
+#contact-us button:hover {
+    border-radius: 2px;
+    border: 1px solid #FFBD59;
+    color: #FFBD59;
+    transition: all .3s;
+}
+
+
+/* @media中型尺寸 */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    /* banner */
+    #banner {
+        background-image: url(/images/banner-01.png);
+        background-repeat: no-repeat;
+        background-attachment: unset;
+        background-size: cover;
+        background-position: center;
+
+        width: 100%;
+        height: 420px;
+    }
+
+    .banner01 p {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .banner01 h2 {
+        font-size: 48px;
+        letter-spacing: 3px;
+    }
+
+    .banner01 h1 {
+        font-size: 28px;
+        letter-spacing: 3px;
+    }
+
+    /* 快速連結 */
+    #fastlink .row {
+        margin-right: 0;
+    }
+
+    /* 展示區塊 */
+    #exhibit {
+        height: auto;
+        background-color: #222222;
+        color: #FFBD59;
+    }
+
+    /* 主題  */
+    .theme {
+        margin-top: 80px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .theme-decorate {
+        display: none;
+    }
+
+    .theme h4 {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .theme sub {
+        display: none;
+    }
+
+    .theme p {
+        display: block;
+        letter-spacing: 2px;
+        line-height: 28px;
+        margin-bottom: 25px;
+    }
+
+    .carousel-inner {
+        border-radius: 0;
+    }
+
+    .theme-01,
+    .theme-02,
+    .theme-03 {
+        margin-left: 0;
+    }
+
+    .theme-02,
+    .theme-03 {
+        margin-top: 80px;
+    }
+
+    .theme-01-01,
+    .theme-02-02,
+    .theme-03-01 {
+        margin-top: 0;
+    }
+
+    .theme-01-02,
+    .theme-02-01,
+    .theme-03-02 {
+        padding: 0;
+    }
+
+    .theme-02 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .theme-02-02 {
+        margin-left: 0;
+
+    }
+
+    /* 商品區 */
+    .project {
+        margin-top: 100px;
+    }
+
+    .project-02 {
+        margin-bottom: 120px;
+    }
+
+    .project .d-flex {
+        padding: 0;
+    }
+
+    /* 聯絡我們 */
+    #contact-us {
+        background-attachment: unset;
+        height: 250px;
+    }
+
+    #contact-us p {
+        font-size: 32px;
+    }
+
+    #contact-us button {
+        width: 170px;
+        height: 48px;
+        margin-top: 12px;
+        letter-spacing: 2px;
+    }
+
+
+}
+
+
+/* @media小型尺寸 */
+@media screen and (max-width:767px) {
+
+
+    /* banner */
+    #banner {
+        background-image: url(/images/banner-01.png);
+        background-repeat: no-repeat;
+        background-attachment: unset;
+        background-size: cover;
+        background-position: center;
+
+        width: 100%;
+        height: 260px;
+    }
+
+    .banner01 p {
+        display: none;
+    }
+
+    .banner01 h2 {
+        margin-top: 0;
+        font-size: 26px;
+        letter-spacing: 2px;
+    }
+
+    .banner01 h1 {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    .banner01 button {
+        display: none;
+    }
+
+    /* 快速連結 */
+
+    #fastlink {
+        height: 120px;
+    }
+
+    #fastlink .row {
+        margin-right: 0;
+    }
+
+    .fastlink-02 {
+        border-right: 1px solid #e0e0e07a;
+        /* border-right: none; */
+    }
+
+    .fastlink-02,
+    .fastlink-02 a,
+    .fastlink-03 {
+        height: 70px;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+
+    .fastlink-03:nth-child(1) {
+        margin-left: 10px;
+    }
+
+    .fastlink-svg {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .fastlink-svg svg {
+        width: 30px;
+    }
+
+    .fastlink-03:hover {
+        transform: scale(1);
+    }
+
+    /* 展示區塊 */
+    #exhibit {
+        height: auto;
+        background-color: #222222;
+        color: #FFBD59;
+    }
+
+    /* 主題  */
+    .theme {
+        margin-top: 50px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .theme-decorate {
+        display: none;
+    }
+
+    .theme h4 {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .theme sub {
+        display: none;
+    }
+
+    .theme p {
+        display: block;
+        letter-spacing: 2px;
+        line-height: 28px;
+        margin-bottom: 18px;
+    }
+
+    .carousel-inner {
+        border-radius: 0;
+    }
+
+    .theme-01,
+    .theme-02,
+    .theme-03 {
+        margin-left: 0;
+    }
+
+    .theme-02,
+    .theme-03 {
+        margin-top: 70px;
+    }
+
+    .theme-01-01,
+    .theme-02-02,
+    .theme-03-01 {
+        margin-top: 0;
+    }
+
+    .theme-01-02,
+    .theme-02-01,
+    .theme-03-02 {
+        padding: 0;
+    }
+
+    .theme-02 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .theme-02-02 {
+        margin-left: 0;
+    }
+
+    /* 商品區 */
+    .project {
+        margin-top: 90px;
+    }
+
+    .project-02 {
+        margin-bottom: 60px;
+    }
+
+    .project .d-flex {
+        padding: 0;
+    }
+
+    .project-02-01 {
+        margin-bottom: 40px;
+    }
+
+    .project-02-01:hover {
+        transform: scale(1);
+    }
+
+    /* 聯絡我們 */
+    #contact-us {
+        background-attachment: unset;
+        height: 160px;
+    }
+
+    #contact-us p {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    #contact-us button {
+        width: 140px;
+        height: 36px;
+        margin-top: 8px;
+        letter-spacing: 2px;
+        font-size: 16px;
+    }
+
+
+}

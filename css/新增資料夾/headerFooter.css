@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+/* 置中 */
+#nav-top,
+#nav-bottom,
+#fastlink,
+#exhibit,
+#contact-us {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* 控制置中寬度 */
+.nav-top-01,
+.nav-bottom-01,
+.fastlink-01,
+.theme,
+.project {
+    width: 1200px;
+}
+
+/* 清除預設樣式 */
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* 頁首 & 導覽列 */
+#nav-top {
+    height: 30px;
+    background-color: #222222;
+}
+
+#nav-top li {
+    padding-left: 40px;
+}
+
+#nav-top a {
+    font-size: 16px;
+    color: #FFBD59;
+    letter-spacing: 1px;
+}
+
+#nav-top a:hover {
+    border-bottom: 1px solid #FFBD59;
+}
+
+#nav-bottom {
+    height: 80px;
+    background-color: #221F37;
+    overflow: hidden;
+}
+
+#nav-bottom img {
+    height: 70px;
+    margin-top: 3px;
+}
+
+#nav-bottom ul {
+    margin-left: 100px;
+}
+
+#nav-bottom li {
+    padding-left: 50px;
+}
+
+#nav-bottom a {
+    color: #e0e0e0;
+    letter-spacing: 3px;
+    transition: all .3s;
+}
+
+#nav-bottom a:hover {
+    color: #FFBD59;
+    transition: all .3s;
+}
+
+/* 搜索樣式 */
+
+#nav-top .form-control {
+    width: 18px;
+    height: 28px;
+    font-size: 14px;
+    color: #e0e0e0;
+    background-color: #222222;
+    border-style: none;
+    border-bottom: 1px solid #ffbd595d;
+    border-radius: 0;
+    transition: all .3s;
+}
+
+#nav-top .form-control:focus {
+    width: 180px;
+    box-shadow: none;
+    border-bottom: 1px solid #FFBD59;
+    transition: all .3s;
+}
+
+#nav-top .btn-style {
+    color: #FFBD59;
+    background-color: #222222;
+    border-style: none;
+}
+
+/* 響應式側邊選單 */
+.burger {
+    text-align: right;
+    display: none;
+}
+
+.burger a {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.burger-btn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 47px;
+    right: 20px;
+    background-color: #221F37;
+    border-style: none;
+    color: #e0e0e0;
+    border-radius: 5px;
+}
+
+
+/* 頁尾 */
+footer {
+    text-align: center;
+    background-color: #221F37;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.footer-top {
+    margin-bottom: 50px;
+}
+
+.footer-top img {
+    height: 70px;
+}
+
+.footer-top ul {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.footer-top li {
+    display: inline-block;
+    padding-right: 32px;
+    letter-spacing: 2px;
+}
+
+.footer-top a {
+    font-size: 18px;
+    color: #e0e0e0;
+    transition: all .3s;
+}
+
+.footer-top a:hover {
+    color: #FFBD59;
+    transition: all .3s;
+}
+
+.footer-bottom small {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #b0b0b0;
+}
+
+/* 回到頂端icon */
+.arrow-icon {
+    z-index: 10;
+    position: fixed;
+    right: 40px;
+    bottom: 50px;
+    opacity: 30%;
+    transition: all .3s;
+}
+
+.arrow-icon:hover {
+    opacity: 100%;
+    transition: all .3s;
+}
+
+.arrow-icon a {
+    color: #FFBD59;
+}
+
+
+/* @media中型尺寸 */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    /* 頁首 & 導覽列 */
+    #nav-top,
+    .nav-bottom-01 ul {
+        display: none;
+    }
+
+    #nav-bottom img {
+        height: 60px;
+        margin-left: 30px;
+    }
+
+    /* 響應式側邊選單 */
+    .burger {
+        text-align: right;
+        display: contents;
+    }
+
+    .burger a {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .burger-btn {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 15px;
+        right: 50px;
+        background-color: #221F37;
+        border-style: none;
+        color: #e0e0e0;
+        border-radius: 5px;
+    }
+
+    .burger-menu {
+        background-color: #221F37;
+        text-align: center;
+    }
+
+    .burger-menu img {
+        height: 70px;
+    }
+
+    .burger-menu li {
+        margin: 12px 0;
+    }
+
+    .burger-menu a {
+        color: #e0e0e0;
+    }
+
+    .burger-menu .btn-close {
+        background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e0e0e0'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+        opacity: 1
+    }
+
+    .burger-menu .btn-close:focus {
+        opacity: 0;
+    }
+
+
+    /* 頁尾 */
+    footer {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+
+    footer .row {
+        margin-right: 0;
+    }
+
+    .footer-top {
+        margin-bottom: 40px;
+    }
+
+    .footer-top img {
+        height: 70px;
+    }
+
+    .footer-top ul {
+        margin-top: 40px;
+        margin-left: 0;
+    }
+
+    .footer-top li {
+        display: inline-block;
+    }
+
+}
+
+
+/* @media小型尺寸 */
+@media screen and (max-width:767px) {
+
+
+    /* 頁首 & 導覽列 */
+    #nav-top,
+    .nav-bottom-01 ul {
+        display: none;
+    }
+
+    #nav-bottom img {
+        height: 50px;
+        margin-left: 30px;
+    }
+
+    /* 響應式側邊選單 */
+    .burger {
+        text-align: right;
+        display: contents;
+    }
+
+    .burger a {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .burger-btn {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 15px;
+        right: 50px;
+        background-color: #221F37;
+        border-style: none;
+        color: #e0e0e0;
+        border-radius: 5px;
+    }
+
+    .burger-menu {
+        background-color: #221F37;
+        text-align: center;
+    }
+
+    .burger-menu img {
+        height: 70px;
+    }
+
+    .burger-menu li {
+        margin: 12px 0;
+    }
+
+    .burger-menu a {
+        color: #e0e0e0;
+    }
+
+    .burger-menu .btn-close {
+        background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e0e0e0'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+        opacity: 1
+    }
+
+    .burger-menu .btn-close:focus {
+        opacity: 0;
+    }
+
+
+    /* 頁尾 */
+    footer {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+
+    footer .row {
+        margin-right: 0;
+    }
+
+    .footer-top {
+        margin-bottom: 30px;
+    }
+
+    .footer-top img {
+        height: 70px;
+    }
+
+    .footer-top ul {
+        margin-top: 35px;
+        margin-left: 0;
+    }
+
+    .footer-top li {
+        display: block;
+        margin-top: 20px;
+    }
+
+
+}

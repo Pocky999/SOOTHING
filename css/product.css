@@ -1,0 +1,98 @@
+#product {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #222222;
+}
+
+#product a {
+    color: #e0e0e0;
+}
+
+.product-01 {
+    width: 1200px;
+}
+
+.product-01-01 {
+    margin-bottom: 40px;
+}
+
+.product-01-01 img {
+    width: 100%;
+}
+
+.product-01-02 .nav-tabs {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.product-01-02 .nav-link:hover {
+    border-color: #e0e0e0;
+}
+
+.product-01-02 .nav-tabs .nav-link.active {
+    background-color: #222222;
+    border-color: #e0e0e0;
+}
+
+.product-01-03 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px 30px;
+}
+
+.product-01-03 .card {
+    background-color: #221F37;
+    border: none;
+    color: #e0e0e0;
+}
+
+.product-01-03 h5 {
+    text-align: center;
+}
+
+.product-01-04 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.product-01-04 .page-link {
+    background-color: #222222;
+    border: none;
+}
+
+.product-01-04 .page-link:hover {
+    background-color: #FFBD59;
+}
+
+#product .product-01-04 a:hover {
+    color: #222222;
+}
+
+.product-01-04 .page-link a:hover {
+    background-color: #222222;
+}
+
+.product-01-04 .page-link a:active {
+    background-color: #FFBD59;
+}
+
+.product-01-04 .page-link:focus {
+    box-shadow: none;
+}
+
+/* @media中型尺寸 */
+@media screen and (min-width: 768px) and (max-width: 992px) {}
+
+
+/* @media小型尺寸 */
+@media screen and (max-width:767px) {
+
+    .product-01-02 .nav-tabs {
+        font-size: 14px;
+    }
+
+    .product-01-02 .nav-link {
+        padding: 10px 12px;
+    }
+
+}

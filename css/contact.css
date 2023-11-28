@@ -1,0 +1,128 @@
+#contact {
+    background-image: url(/images/banner-01.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.contact-01 {
+    width: 880px;
+    height: auto;
+    background-color: #222222;
+    opacity: 90%;
+    border-radius: 8px;
+}
+
+.contact-02 h2 {
+    font-size: 32px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.contact-02-00 {
+    margin: 30px 60px;
+    margin-bottom: 60px;
+    /* opacity: 90%; */
+    text-align: left;
+}
+
+.contact-02-00 label {
+    margin-left: 5px;
+}
+
+.contact-02-01,
+.contact-02-02 {
+    margin: 30px 60px;
+}
+
+.contact-02-01 input:focus {
+    border: 2px solid #f4a938;
+    box-shadow: none;
+}
+
+.contact-02-02 textarea:focus {
+    border: 2px solid #f4a938;
+    box-shadow: none;
+}
+
+.contact-02-03 {
+    margin: 10px 60px;
+    text-align: center;
+}
+
+.contact-02-03 button {
+    border: none;
+    background-color: #f4a938;
+}
+
+.contact-02-03 button:hover {
+    background-color: #FFBD59;
+}
+
+
+
+.arrow-icon {
+    display: none;
+}
+
+
+/* @media中型尺寸 */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    #contact {
+        padding: 0;
+    }
+
+    .contact-01 {
+        width: 100%;
+        height: 700px;
+        background-color: #222222;
+        opacity: 90%;
+        border-radius: 0;
+    }
+
+}
+
+
+/* @media小型尺寸 */
+@media screen and (max-width:767px) {
+
+    #contact {
+        padding: 0;
+    }
+
+    .contact-01 {
+        width: 100%;
+        height: 100%;
+        background-color: #222222;
+        opacity: 90%;
+        border-radius: 0;
+    }
+
+    .contact-02-00 {
+        margin: 10px 10px;
+        margin-bottom: 60px;
+        opacity: 90%;
+        text-align: center;
+    }
+
+    .contact-02-01,
+    .contact-02-02 {
+        margin: 10px 10px;
+    }
+
+}
